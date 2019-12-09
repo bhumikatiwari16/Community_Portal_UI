@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import ReactDelayRender from 'react-delay-render';
+import renderHTML from 'react-render-html'
+import { Grid, Typography, Avatar } from '@material-ui/core';
 
 
   const divStyle ={
@@ -36,11 +39,63 @@ const cellStyle ={
   borderTop: '1px solid #ccc',
   verticalAlign: "center"
 }
+const SmallRow = () => (
+
+  <div style={divStyle}>
+  <br/>
+  <br/>
+  <br/>
+  <Typography
+align="center"
+gutterBottom
+variant="h4" > Results </Typography>
+  <table style={tableStyle}>
+  <tr>
+  <th style={cellStyle}> Status </th>
+  <th style={cellStyle}> Application </th>
+  <th style={cellStyle}> Test type </th>
+  <th style={cellStyle}> Total test cases executed </th>
+  <th style={cellStyle}> Passed </th>
+  <th style={cellStyle}> Failed </th>
+  <th style={cellStyle}> Created on </th>
+  </tr>
+  <tr>
+  <td style={cellStyle}> COMPLETED</td>
+
+  <td style={cellStyle}>
+  HelloWorld_v1.0_apkpure.com.apk
+  </td>
+  <td style={cellStyle}>
+  APPIUM_JAVA_TESTNG
+  </td>
+  <td style={cellStyle}>
+  15
+  </td>
+  <td style={cellStyle}>
+  15
+  </td>
+  <td style={cellStyle}>
+  0
+  </td>
+  <td style={cellStyle}>
+  12/10/2019
+  </td>
+  </tr>
+  </table>
+
+      </div>
+);
+const renderMSG = () => {
+
+return renderHTML('<div style={divStyle}>This should work cross-browser</div>');
+};
+
 class RunResults extends Component {
 
 constructor(props){
     super(props);
   this.state = {
+    body:[],
     AppName : "",
     platform : "Android",
     createDt : "",
@@ -54,50 +109,14 @@ constructor(props){
 
 
 
-
 render(){
+    const { body } = this.state;
   return (
-   // <h1> Test Results </h1>
-<div style={divStyle}>
+    <h1>Loading Results </h1>
 
-<table style={tableStyle}>
-<tr>
-<th style={cellStyle}> Status </th>
-<th style={cellStyle}> Application </th>
-<th style={cellStyle}> Test type </th>
-<th style={cellStyle}> Total test cases executed </th>
-<th style={cellStyle}> Passed </th>
-<th style={cellStyle}> Failed </th>
-<th style={cellStyle}> Created on </th>
-</tr>
-<tr>
-<td style={cellStyle}>COMPLETED </td>
-
-<td style={cellStyle}>
-HelloWorld_v1.0_apkpure.com.apk
-</td>
-<td style={cellStyle}>
-BUILTIN_FUZZ
-</td>
-<td style={cellStyle}>
-15
-</td>
-<td style={cellStyle}>
-15
-</td>
-<td style={cellStyle}>
-0
-</td>
-<td style={cellStyle}>
-11/18/2019
-</td>
-</tr>
-</table>
-
-    </div>
     );
 }
-    
+
 }
 
-export default RunResults;
+export default ReactDelayRender({ delay: 70000,onRender: renderMSG })(SmallRow);
