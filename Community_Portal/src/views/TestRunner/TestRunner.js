@@ -47,7 +47,7 @@ const TestRunner = (props) => {
           variant="h4"> Interactive Testing</Typography>
               <CardText>Live or interactive testing allows you to interact with a device through your web browser in real time in order to perform manual testing.
 				</CardText>
-            <Link variant="h6" ><Button>  <a href="https://cloud.geny.io/app/default-devices">Start Session</a></Button></Link>
+            <Link variant="h6" ><Button>  <a href="https://cloud.geny.io/app/default-devices" target="_blank" style={{color:'#fff'}}>Start Session</a></Button></Link>
             </Card>
           </MDBCol>
         </MDBRow>
