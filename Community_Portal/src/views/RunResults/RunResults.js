@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import ReactDelayRender from 'react-delay-render';
-
+import {
+  Link
+} from '@material-ui/core';
+import { Link as RouterLink } from 'react-router-dom';
+import {Button} from 'reactstrap';
 import { Grid, Typography, Avatar } from '@material-ui/core';
 
 
@@ -82,7 +86,11 @@ variant="h4" > Results </Typography>
   </td>
   </tr>
   </table>
-
+<Link component={RouterLink}
+  to="/testing"
+  variant="h8"><center>
+        <Button  >
+            Start new session </Button></center></Link>
       </div>
 );
 
