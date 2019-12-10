@@ -7,7 +7,7 @@
   "private": false,
   "main": "server.js",
   "scripts": {
-     "start": "concurrently \"cd backend && node server.js\" \"react-scripts start\" \"cd social_frontend && npm run start\"",
+    "start": "concurrently \"cd backend && node server.js\" \"react-scripts start\" \"cd social_frontend && npm run start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -54,6 +54,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-chartjs-2": "^2.8.0",
+    "react-delay-render": "^0.1.2",
     "react-dom": "^16.12.0",
     "react-filepond": "^7.0.1",
     "react-perfect-scrollbar": "^1.5.3",
