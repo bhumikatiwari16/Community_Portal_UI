@@ -101,7 +101,7 @@ class Automated extends Component {
   }
   goToResults= () => {
    //just put your request directly in the method
-   fetch('http://localhost:5000/RunResults/?appName='+this.state.appName
+   fetch('http://localhost:5000/RunResults?appName='+this.state.appName
   )
      .then(response => {
        //do something with response
