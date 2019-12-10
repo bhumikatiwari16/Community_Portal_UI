@@ -101,7 +101,7 @@ class Automated extends Component {
   }
   goToResults= () => {
    //just put your request directly in the method
-   fetch('http://localhost:8080/RunResults/?appName='+this.state.appName
+   fetch('http://testrunner-env.c9yh857za4.us-east-1.elasticbeanstalk.com/RunResults/?appName='+this.state.appName
   )
      .then(response => {
        //do something with response
