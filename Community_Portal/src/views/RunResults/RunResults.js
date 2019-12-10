@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDelayRender from 'react-delay-render';
-import renderHTML from 'react-render-html'
+
 import { Grid, Typography, Avatar } from '@material-ui/core';
 
 
@@ -85,10 +85,7 @@ variant="h4" > Results </Typography>
 
       </div>
 );
-const renderMSG = () => {
 
-return renderHTML('<div style={divStyle}>This should work cross-browser</div>');
-};
 
 class RunResults extends Component {
 
@@ -119,4 +116,4 @@ render(){
 
 }
 
-export default ReactDelayRender({ delay: 70000,onRender: renderMSG })(SmallRow);
+export default ReactDelayRender({ delay: 70000 })(SmallRow);
