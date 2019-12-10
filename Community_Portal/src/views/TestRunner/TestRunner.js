@@ -6,7 +6,7 @@ import {
 } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
-import './testRunner.css';
+
 
 const TestRunner = (props) => {
   const [activeTab, setActiveTab] = useState('1');
