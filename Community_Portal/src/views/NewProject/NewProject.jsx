@@ -57,7 +57,7 @@ class NewProject extends Component {
   // our first get method that uses our backend api to
   // fetch data from our data base
   getDataFromDb = () => {
-    fetch('http://ec2-54-89-32-62.compute-1.amazonaws.com:3001/api/getData')
+    fetch('http://ec2-54-173-147-93.compute-1.amazonaws.com:3001/api/getData')
       .then((data) => data.json())
       .then((res) => this.setState({ data: res.data }));
   };
@@ -71,7 +71,7 @@ class NewProject extends Component {
       ++idToBeAdded;
     }
 
-    axios.post('http://ec2-54-89-32-62.compute-1.amazonaws.com:3001/api/putData', {
+    axios.post('http://ec2-54-173-147-93.compute-1.amazonaws.com:3001/api/putData', {
       id: idToBeAdded,
       message: message,
       projectname : projectname,
@@ -95,7 +95,7 @@ class NewProject extends Component {
       }
     });
 
-    axios.delete('http://ec2-54-89-32-62.compute-1.amazonaws.com:3001/api/deleteData', {
+    axios.delete('http://ec2-54-173-147-93.compute-1.amazonaws.com:3001/api/deleteData', {
       data: {
         id: objIdToDelete,
       },
@@ -113,7 +113,7 @@ class NewProject extends Component {
       }
     });
 
-    axios.post('http://ec2-54-89-32-62.compute-1.amazonaws.com:3001/api/updateData', {
+    axios.post('http://ec2-54-173-147-93.compute-1.amazonaws.com:3001/api/updateData', {
       id: objIdToUpdate,
       update: { message: updateToApply },
     });

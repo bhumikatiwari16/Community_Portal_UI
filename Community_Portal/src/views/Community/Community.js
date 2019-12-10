@@ -19,7 +19,7 @@ const Community = () => {
     <div className={classes.root}>
       <iframe
         className={classes.iframe}
-        src="http://ec2-54-89-32-62.compute-1.amazonaws.com:3000/"
+        src="http://ec2-54-173-147-93.compute-1.amazonaws.com:3000/"
         title="Community Page"
       />
     </div>

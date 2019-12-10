@@ -52,7 +52,7 @@ class ViewProject extends React.Component{
     }
 
   getDataFromDb = () => {
-    fetch('http://ec2-54-89-32-62.compute-1.amazonaws.com:3001/api/getData')
+    fetch('http://ec2-54-173-147-93.compute-1.amazonaws.com:3001/api/getData')
       .then((data) => data.json())
       .then((res) => this.setState({ data: res.data }));
   };
