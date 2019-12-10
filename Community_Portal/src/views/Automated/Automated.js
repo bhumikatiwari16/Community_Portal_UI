@@ -248,6 +248,12 @@ class Automated extends Component {
             </td>
           </tr>
         </table>
+<br/>
+		      <center><b><Label>You'll be redirected to results page on click of submit </Label>
+        <Label>which might be blank till all the tests are executed, don't panic!</Label>
+        <br/>
+        <Label>Results will be visible as soon as execution is finished.</Label></b>
+</center>
         <br/><br/>
 
         <Link
