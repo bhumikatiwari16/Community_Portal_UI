@@ -252,7 +252,7 @@ class Automated extends Component {
 
         <Link
                   component={RouterLink}
-                  to="/TestRunner"
+                  to="/testing"
                   variant="h8"
                 >  <Button style={{height:'50px',width:'80px'}}> Back </Button></Link>
 
