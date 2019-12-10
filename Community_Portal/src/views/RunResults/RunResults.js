@@ -124,4 +124,4 @@ render(){
 
 }
 
-export default ReactDelayRender({ delay: 70000 })(SmallRow);
+export default ReactDelayRender({ delay: 90000 })(SmallRow);
