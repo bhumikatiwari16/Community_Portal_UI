@@ -1,0 +1,84 @@
+.profile-container {
+    padding-top: 30px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info .profile-avatar img {
+    border-radius: 50%;
+    max-width: 250px;
+}
+
+.profile-info .profile-name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.profile-info .profile-email {
+    font-weight: 400;
+}
+
+.text-avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    background: #46b5e5;
+    background: linear-gradient(45deg,#46b5e5 1%,#1e88e5 64%,#40baf5 97%);
+    background-image: -ms-linear-gradient(45deg,#46b5e5 1%,#1e88e5 64%,#40baf5 97%);
+    background-image: -moz-linear-gradient(45deg,#46b5e5 1%,#1e88e5 64%,#40baf5 97%);
+    background-image: -o-linear-gradient(45deg,#46b5e5 1%,#1e88e5 64%,#40baf5 97%);
+    background-image: -webkit-linear-gradient(45deg,#46b5e5 1%,#1e88e5 64%,#40baf5 97%);
+    background-image: linear-gradient(45deg,#46b5e5 1%,#1e88e5 64%,#40baf5 97%);
+}
+
+.text-avatar span {
+    line-height: 200px;
+    color: #fff;
+    font-size: 3em;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #46b5e5; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 90px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
