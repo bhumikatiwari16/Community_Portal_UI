@@ -43,7 +43,7 @@
     "express": "^4.16.3",
     "filepond": "^4.7.4",
     "history": "^4.9.0",
-    "jsonwebtoken": "^7.4.2",
+    "jsonwebtoken": "^9.0.0",
     "mdbreact": "^4.23.0",
     "moment": "^2.24.0",
     "mongodb": "^3.1.6",
